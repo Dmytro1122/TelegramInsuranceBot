@@ -4,9 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 using TelegramInsuranceBot.Application.Interfaces;
 using TelegramInsuranceBot.Application.Services;
-using Telegram.Bot.Args;
 using TelegramInsuranceBot.Infrastructure.Services;
-
 
 namespace TelegramInsuranceBot.ConsoleApp
 {
@@ -25,23 +23,21 @@ namespace TelegramInsuranceBot.ConsoleApp
                     var config = context.Configuration;
                     string botToken = config["TelegramBot__Token"];
 
-
-
-                    services.AddSingleton<TelegramBotClient>(new TelegramBotClient(botToken)); 
+                    services.AddSingleton<TelegramBotClient>(new TelegramBotClient(botToken));
                     services.AddSingleton<IBotConversationHandler, BotConversationHandler>();
                     services.AddHttpClient<IOpenAiService, OpenAiAssistantService>();
-                    services.AddScoped<IDocumentStorageService, DocumentStorageService>(); 
+                    services.AddScoped<IDocumentStorageService, DocumentStorageService>();
                     services.AddHttpClient<IMindeeService, MindeeService>();
                     services.AddSingleton<IInsurancePolicyGenerator, InsurancePolicyGenerator>();
                     services.AddSingleton<IPolicyGeneratorService, PolicyGeneratorService>();
-
                 })
                 .Build();
 
             var botHandler = host.Services.GetRequiredService<IBotConversationHandler>();
             await botHandler.StartAsync();
 
-            Console.WriteLine("Bot is running. Press Enter to exit...");
+            Console.WriteLine("BOT STARTED OK");
+
             Console.ReadLine();
         }
     }
