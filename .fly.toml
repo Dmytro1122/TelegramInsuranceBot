@@ -1,0 +1,22 @@
+app = "telegraminsurancebot"
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[env]
+  TelegramBot__Token = ""
+  OpenAi__ApiKey = ""
+  OpenAi__AssistantId = ""
+  Mindee__ApiKey = ""
+  Mindee__IdCardEndpoint = ""
+  Mindee__VehicleCardEndpoint = ""
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+
+  [[services.ports]]
+    port = 443

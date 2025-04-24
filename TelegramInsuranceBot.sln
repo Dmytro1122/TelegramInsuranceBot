@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramInsuranceBot.ConsoleApp", "TelegramInsuranceBot.ConsoleApp\TelegramInsuranceBot.ConsoleApp.csproj", "{7B3C43A0-4CEC-4F32-B336-8A3EC84EAF90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramInsuranceBot.ConsoleApp", "TelegramInsuranceBot.ConsoleApp\TelegramInsuranceBot.ConsoleApp.csproj", "{7B3C43A0-4CEC-4F32-B336-8A3EC84EAF90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramInsuranceBot.Application", "TelegramInsuranceBot.Application\TelegramInsuranceBot.Application.csproj", "{23979464-7E61-4F69-9137-9B3019F20280}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramInsuranceBot.Application", "TelegramInsuranceBot.Application\TelegramInsuranceBot.Application.csproj", "{23979464-7E61-4F69-9137-9B3019F20280}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramInsuranceBot.Domain", "TelegramInsuranceBot.Domain\TelegramInsuranceBot.Domain.csproj", "{330F07C6-A3FF-48E5-A858-DAD02212D06B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramInsuranceBot.Domain", "TelegramInsuranceBot.Domain\TelegramInsuranceBot.Domain.csproj", "{330F07C6-A3FF-48E5-A858-DAD02212D06B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramInsuranceBot.Infrastructure", "TelegramInsuranceBot.Infrastructure\TelegramInsuranceBot.Infrastructure.csproj", "{09D6C656-7410-49A8-86E5-486125F1B3FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramInsuranceBot.Infrastructure", "TelegramInsuranceBot.Infrastructure\TelegramInsuranceBot.Infrastructure.csproj", "{09D6C656-7410-49A8-86E5-486125F1B3FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{420CA298-F099-4DFF-9479-FBDB0FE396CC}"
+	ProjectSection(SolutionItems) = preProject
+		.fly.toml = .fly.toml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
