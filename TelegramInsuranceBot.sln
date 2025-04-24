@@ -11,11 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramInsuranceBot.Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramInsuranceBot.Infrastructure", "TelegramInsuranceBot.Infrastructure\TelegramInsuranceBot.Infrastructure.csproj", "{09D6C656-7410-49A8-86E5-486125F1B3FF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{420CA298-F099-4DFF-9479-FBDB0FE396CC}"
-	ProjectSection(SolutionItems) = preProject
-		.fly.toml = .fly.toml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
