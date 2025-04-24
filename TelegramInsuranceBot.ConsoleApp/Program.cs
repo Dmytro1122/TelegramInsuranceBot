@@ -46,3 +46,4 @@ namespace TelegramInsuranceBot.ConsoleApp
         }
     }
 }
+
