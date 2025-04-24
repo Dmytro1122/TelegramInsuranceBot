@@ -38,7 +38,10 @@ namespace TelegramInsuranceBot.ConsoleApp
 
             Console.WriteLine("BOT STARTED OK");
 
-            Console.ReadLine();
+            while (true)                            // ⬅️ замість Console.ReadLine
+            {
+                await Task.Delay(10000);
+            }
         }
     }
 }
