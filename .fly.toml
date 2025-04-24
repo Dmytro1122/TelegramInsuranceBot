@@ -1,11 +1,6 @@
 app = "telegraminsurancebot"
 primary_region = "ams"
 
-[build]
-  builder = "heroku/buildpacks:20"
-  buildpacks = ["heroku/dotnet"]
-  buildpacks_dir = "TelegramInsuranceBot.ConsoleApp"
-
 [env]
   DOTNET_RUNNING_IN_CONTAINER = "true"
 
