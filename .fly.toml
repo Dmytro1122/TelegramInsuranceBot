@@ -2,8 +2,7 @@ app = "telegraminsurancebot"
 primary_region = "ams"
 
 [build]
-  builder = "heroku/buildpacks:20"
-  buildpacks = ["heroku/dotnet"]
+  image = "mcr.microsoft.com/dotnet/aspnet:8.0"
 
 [env]
   DOTNET_RUNNING_IN_CONTAINER = "true"
