@@ -23,7 +23,8 @@ namespace TelegramInsuranceBot.ConsoleApp
                 .ConfigureServices((context, services) =>
                 {
                     var config = context.Configuration;
-                    string botToken = config["TelegramBot:Token"];
+                    string botToken = config["TelegramBot__Token"];
+
 
 
                     services.AddSingleton<TelegramBotClient>(new TelegramBotClient(botToken)); 
