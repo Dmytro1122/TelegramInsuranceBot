@@ -1,4 +1,4 @@
-# Use the official .NET SDK image to build and publish the app
+# 1. Build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
@@ -6,14 +6,17 @@ WORKDIR /src
 COPY TelegramInsuranceBot.ConsoleApp/*.csproj TelegramInsuranceBot.ConsoleApp/
 RUN dotnet restore TelegramInsuranceBot.ConsoleApp/TelegramInsuranceBot.ConsoleApp.csproj
 
-# Copy everything else and build
+# Copy everything else
 COPY . .
 WORKDIR /src/TelegramInsuranceBot.ConsoleApp
+
+# Publish app
 RUN dotnet publish -c Release -o /app
 
-# Runtime image
+# 2. Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /app .
 
+# Launch
 ENTRYPOINT ["dotnet", "TelegramInsuranceBot.ConsoleApp.dll"]
