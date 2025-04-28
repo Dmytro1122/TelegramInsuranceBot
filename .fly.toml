@@ -1,8 +1,0 @@
-app = "telegraminsurancebot"
-primary_region = "ams"
-
-[env]
-  DOTNET_RUNNING_IN_CONTAINER = "true"
-
-[processes]
-  app = "dotnet TelegramInsuranceBot.ConsoleApp.dll"
